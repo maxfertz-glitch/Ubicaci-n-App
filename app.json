@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Ubicación",
+    "slug": "ubicacion-app",
+    "version": "0.1.0",
+    "ios": {
+      "bundleIdentifier": "com.maximo.ubicacion",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Usamos tu ubicación para mostrarla a las personas con las que elegiste compartirla.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Para seguir compartiendo tu ubicación con tu familia aunque la app esté en segundo plano. Podés pausarlo cuando quieras.",
+        "UIBackgroundModes": [
+          "location"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.maximo.ubicacion",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "isAndroidBackgroundLocationEnabled": true,
+          "isIosBackgroundLocationEnabled": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {}
+      ]
+    ],
+    "extra": {
+      "supabaseUrl": "PEGAR_URL_DE_SUPABASE",
+      "supabaseAnonKey": "PEGAR_ANON_KEY_DE_SUPABASE"
+    }
+  }
+}
