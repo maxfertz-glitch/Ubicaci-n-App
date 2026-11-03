@@ -39,7 +39,7 @@
     ],
     "extra": {
       "supabaseUrl": "https://ndfviudgzxyeznkuufni.supabase.co",
-      "supabaseAnonKey": "PEGAR_ANON_KEY_DE_SUPABASE"
+      "supabaseAnonKey": "sb_publishable_jF8o4XLYdz56pNg_lpt52A_Xzmbq0EQ"
     }
   }
 }
